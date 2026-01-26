@@ -1,0 +1,1044 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Join Helal | Hiring & Internships - Digital Marketing Agency Alexandria</title>
+   <meta name="description" content="Apply to join Helal in Alexandria, Egypt. Explore open roles and internships in media production, digital marketing, and branding. Submit your application now.">
+   <meta name="keywords" content="Helal hiring, jobs Alexandria, internships Alexandria, media production jobs, digital marketing careers, branding careers">
+   <meta name="author" content="Helal Digital Marketing Agency">
+   <meta property="og:title" content="Contact Helal - Digital Marketing Agency Alexandria">
+   <meta property="og:description" content="Ready to make your brand shine? Contact Helal for professional digital marketing and branding services in Alexandria, Egypt.">
+   <meta property="og:type" content="website">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/custom-animation.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   
+   <!-- Font Awesome for social icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <style>
+      /* Custom styles for hiring page */
+      .contact-container {
+         min-height: 100vh;
+         background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 120px 20px 60px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .contact-container::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-image: radial-gradient(circle at 25% 25%, #FFD700 0%, transparent 50%),
+                          radial-gradient(circle at 75% 75%, #FFA500 0%, transparent 50%);
+         opacity: 0.1;
+         z-index: 1;
+      }
+
+      .contact-card {
+         background: rgba(255, 255, 255, 0.05);
+         backdrop-filter: blur(15px);
+         border: 1px solid rgba(255, 215, 0, 0.2);
+         border-radius: 20px;
+         padding: 40px 35px;
+         max-width: 520px;
+         width: 100%;
+         text-align: center;
+         position: relative;
+         z-index: 2;
+         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .contact-logo {
+         width: 100px;
+         height: 100px;
+         background: #000;
+         border: 3px solid #FFD700;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto 25px;
+         box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+         transition: all 0.3s ease;
+      }
+
+      .contact-logo:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+      }
+
+      .contact-logo img {
+         width: 50px;
+         height: 70px;
+      }
+
+      .contact-title {
+         color: #fff;
+         font-size: 2.2rem;
+         font-weight: 700;
+         margin-bottom: 12px;
+         background: linear-gradient(135deg, #FFD700, #FFA500);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+      }
+
+      .contact-subtitle {
+         color: #ccc;
+         font-size: 1rem;
+         margin-bottom: 30px;
+         line-height: 1.6;
+      }
+
+      .contact-form {
+         margin-bottom: 30px;
+      }
+
+      .form-group {
+         margin-bottom: 20px;
+         text-align: left;
+      }
+
+      .form-group label {
+         color: #FFD700;
+         font-weight: 600;
+         margin-bottom: 8px;
+         display: block;
+         font-size: 14px;
+      }
+
+      .form-control {
+         width: 100%;
+         padding: 12px 16px;
+         background: rgba(255, 255, 255, 0.1);
+         border: 1px solid rgba(255, 215, 0, 0.3);
+         border-radius: 10px;
+         color: #fff;
+         font-size: 14px;
+         transition: all 0.3s ease;
+         backdrop-filter: blur(10px);
+      }
+
+      /* Styled select to match page theme (using nice-select) */
+      .select-wrap { position: relative; }
+      /* Hide any custom arrow from earlier approach */
+      .select-wrap::after { display: none; }
+      /* nice-select overrides */
+      .nice-select {
+         background: rgba(255, 255, 255, 0.1);
+         border: 1px solid rgba(255, 215, 0, 0.3);
+         color: #fff;
+         width: 100%;
+         border-radius: 10px;
+         height: 44px;
+         line-height: 42px;
+         padding-left: 16px;
+         padding-right: 40px;
+         -webkit-backdrop-filter: none;
+         backdrop-filter: none;
+         display: flex;
+         align-items: center;
+      }
+      .nice-select.open, .nice-select:focus {
+         border-color: #FFD700;
+         box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
+      }
+      .nice-select:after {
+         border-bottom: 2px solid #FFD700;
+         border-right: 2px solid #FFD700;
+         width: 8px; height: 8px;
+         right: 14px; margin-top: -6px;
+         transform: rotate(45deg);
+         opacity: 0.95;
+      }
+      .nice-select .current { color:#fff; flex:1; line-height: 1; }
+      .nice-select .list {
+         background: rgba(20,20,20,0.98);
+         border: 1px solid rgba(255, 215, 0, 0.25);
+         box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+         border-radius: 10px;
+         margin-top: 6px;
+         -webkit-backdrop-filter: none;
+         backdrop-filter: none;
+      }
+      .nice-select .option {
+         color: #fff;
+         line-height: 36px;
+         min-height: 36px;
+         -webkit-backdrop-filter: none;
+         backdrop-filter: none;
+      }
+      .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+         background: rgba(255, 215, 0, 0.12);
+         color: #FFD700;
+      }
+
+      .form-control:focus {
+         outline: none;
+         border-color: #FFD700;
+         box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+         background: rgba(255, 255, 255, 0.15);
+      }
+
+      .form-control::placeholder {
+         color: #999;
+      }
+
+      textarea.form-control {
+         min-height: 100px;
+         resize: vertical;
+      }
+
+      /* Upload Mode Selector */
+      .upload-mode-selector {
+         display: flex;
+         gap: 15px;
+         margin-top: 8px;
+      }
+
+      .radio-option {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         color: #fff;
+         cursor: pointer;
+         padding: 10px 20px;
+         background: rgba(255, 255, 255, 0.05);
+         border: 1px solid rgba(255, 215, 0, 0.3);
+         border-radius: 10px;
+         transition: all 0.3s ease;
+         flex: 1;
+         justify-content: center;
+      }
+
+      .radio-option:hover {
+         background: rgba(255, 255, 255, 0.1);
+         border-color: rgba(255, 215, 0, 0.5);
+      }
+
+      .radio-option input[type="radio"] {
+         margin: 0;
+         cursor: pointer;
+         accent-color: #FFD700;
+      }
+
+      .radio-option input[type="radio"]:checked + span {
+         color: #FFD700;
+         font-weight: 600;
+      }
+
+      .radio-option:has(input[type="radio"]:checked) {
+         background: rgba(255, 215, 0, 0.15);
+         border-color: #FFD700;
+         box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      }
+
+      /* File Input Styling */
+      input[type="file"].form-control {
+         padding: 10px;
+         cursor: pointer;
+      }
+
+      input[type="file"].form-control::-webkit-file-upload-button {
+         background: linear-gradient(135deg, #FFD700, #FFA500);
+         color: #000;
+         border: none;
+         padding: 8px 16px;
+         border-radius: 8px;
+         font-weight: 600;
+         cursor: pointer;
+         margin-right: 10px;
+      }
+
+      input[type="file"].form-control::-webkit-file-upload-button:hover {
+         opacity: 0.9;
+      }
+
+      /* File Info Display */
+      .file-info {
+         margin-top: 10px;
+         padding: 12px;
+         background: rgba(255, 215, 0, 0.1);
+         border: 1px solid rgba(255, 215, 0, 0.3);
+         border-radius: 8px;
+      }
+
+      .file-info .file-name {
+         color: #FFD700;
+         font-weight: 600;
+         margin: 0 0 5px 0;
+         font-size: 14px;
+      }
+
+      .file-info .file-size {
+         color: #ccc;
+         margin: 0;
+         font-size: 13px;
+      }
+
+      .contact-btn {
+         background: linear-gradient(135deg, #FFD700, #FFA500);
+         color: #000;
+         border: none;
+         padding: 15px 40px;
+         border-radius: 50px;
+         font-weight: 700;
+         font-size: 16px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         width: 100%;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .contact-btn:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+      }
+
+      .contact-btn:disabled {
+         opacity: 0.7;
+         cursor: not-allowed;
+         transform: none;
+      }
+
+      .contact-info {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 30px;
+         margin-top: 40px;
+      }
+
+      .contact-item {
+         color: #FFD700;
+         text-decoration: none;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         font-size: 16px;
+         transition: all 0.3s ease;
+      }
+
+      .contact-item:hover {
+         color: #FFA500;
+         transform: translateY(-2px);
+      }
+
+      .contact-item i {
+         font-size: 18px;
+         width: 20px;
+         text-align: center;
+      }
+
+      .message-display {
+         margin-top: 20px;
+         padding: 15px;
+         border-radius: 10px;
+         font-weight: 600;
+         display: none;
+      }
+
+      .message-success {
+         background: rgba(76, 175, 80, 0.2);
+         color: #4CAF50;
+         border: 1px solid rgba(76, 175, 80, 0.3);
+      }
+
+      .message-error {
+         background: rgba(255, 107, 107, 0.2);
+         color: #ff6b6b;
+         border: 1px solid rgba(255, 107, 107, 0.3);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+         .contact-container {
+            padding: 100px 15px 40px;
+         }
+         
+         .contact-card {
+            padding: 25px 20px;
+            margin: 15px;
+            max-width: 100%;
+         }
+         
+         .contact-title {
+            font-size: 1.8rem;
+         }
+         
+         .contact-subtitle {
+            font-size: 0.9rem;
+         }
+         
+         .contact-logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+         }
+         
+         .contact-logo img {
+            width: 50px;
+         }
+         
+         .contact-info {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+         }
+      }
+
+      /* Loading spinner */
+      .spinner {
+         display: inline-block;
+         width: 20px;
+         height: 20px;
+         border: 2px solid rgba(0, 0, 0, 0.3);
+         border-radius: 50%;
+         border-top-color: #000;
+         animation: spin 1s ease-in-out infinite;
+         margin-right: 10px;
+      }
+
+      @keyframes spin {
+         to { transform: rotate(360deg); }
+      }
+
+      /* Modern Loader Styles (matched to index.html) */
+      .preloader-wrap {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         z-index: 9999;
+         overflow: hidden;
+      }
+
+      .modern-loader {
+         text-align: center;
+         position: relative;
+      }
+
+      .logo-container {
+         margin-bottom: 40px;
+         animation: logoFloat 3s ease-in-out infinite;
+      }
+
+      .loader-logo {
+         width: 80px;
+         height: auto;
+         filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
+         animation: logoGlow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes logoFloat {
+         0%, 100% { transform: translateY(0px); }
+         50% { transform: translateY(-10px); }
+      }
+
+      @keyframes logoGlow {
+         0% { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5)); }
+         100% { filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.8)); }
+      }
+
+      .rings-container {
+         position: relative;
+         width: 120px;
+         height: 120px;
+         margin: 0 auto 40px;
+      }
+
+      .ring {
+         position: absolute;
+         border: 3px solid transparent;
+         border-radius: 50%;
+         animation: ringRotate 2s linear infinite;
+      }
+
+      .ring-1 { width: 120px; height: 120px; border-top: 3px solid #FFD700; animation-duration: 1.5s; }
+      .ring-2 { width: 90px; height: 90px; top: 15px; left: 15px; border-right: 3px solid #FFA500; animation-duration: 2s; animation-direction: reverse; }
+      .ring-3 { width: 60px; height: 60px; top: 30px; left: 30px; border-bottom: 3px solid #FFD700; animation-duration: 1s; }
+
+      @keyframes ringRotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+      .loader-text {
+         font-family: 'Poppins', sans-serif;
+         font-size: 24px;
+         font-weight: 600;
+         color: #FFD700;
+         margin-bottom: 30px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 2px;
+      }
+
+      .text-char { display: inline-block; animation: textBounce 1.5s ease-in-out infinite; animation-fill-mode: both; }
+      .text-char:nth-child(1) { animation-delay: 0.1s; }
+      .text-char:nth-child(2) { animation-delay: 0.2s; }
+      .text-char:nth-child(3) { animation-delay: 0.3s; }
+      .text-char:nth-child(4) { animation-delay: 0.4s; }
+      .text-char:nth-child(5) { animation-delay: 0.5s; }
+      .text-char:nth-child(6) { animation-delay: 0.6s; }
+      .text-char:nth-child(7) { animation-delay: 0.7s; }
+      .dots { animation: dotsBlink 1s ease-in-out infinite; }
+
+      @keyframes textBounce { 0%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } }
+      @keyframes dotsBlink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0.3; } }
+
+      .progress-container { width: 200px; height: 4px; background: rgba(255, 255, 255, 0.1); border-radius: 2px; overflow: hidden; margin: 0 auto; }
+      .progress-bar { width: 0%; height: 100%; background: linear-gradient(90deg, #FFD700, #FFA500); border-radius: 2px; animation: progressFill 3s ease-in-out forwards; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+      @keyframes progressFill { 0% { width: 0%; } 50% { width: 70%; } 100% { width: 100%; } }
+
+      /* Fade out animation */
+      .preloader-wrap.fade-out { animation: fadeOut 0.5s ease-out forwards; }
+      @keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; visibility: hidden; } }
+   </style>
+</head>
+
+<body>
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+   <!-- pre loader area start -->
+   <!-- <div id="loading" class="preloader-wrap">
+      <div class="preloader-2 text-center">
+        <img class="line line-5"src="assets/img/home-03/about/ab-shape-img.png" alt="Logo" style="width: 120px; height: auto; margin-bottom: 20px;" />
+        <div class="loader-text">Loading ...</div>
+      </div>
+    </div> -->
+
+
+
+
+    <div id="loading" class="preloader-wrap">
+      <div class="modern-loader">
+         <!-- Logo Container -->
+         <div class="logo-container">
+            <img src="assets/img/home-03/about/ab-shape-img.png" alt="Helal Logo" class="loader-logo">
+         </div>
+         
+         <!-- Animated Rings -->
+         <div class="rings-container">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+         </div>
+         
+         <!-- Loading Text -->
+         <div class="loader-text">
+            <span class="text-char">L</span>
+            <span class="text-char">o</span>
+            <span class="text-char">a</span>
+            <span class="text-char">d</span>
+            <span class="text-char">i</span>
+            <span class="text-char">n</span>
+            <span class="text-char">g</span>
+            <span class="dots">...</span>
+         </div>
+         
+         <!-- Progress Bar -->
+         <div class="progress-container">
+            <div class="progress-bar"></div>
+         </div>
+      </div>
+    </div>
+   <!-- pre loader area end -->
+
+   <!-- back to top start -->
+   <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+         </svg>
+      </button>
+   </div>
+   <!-- back to top end -->
+
+   <!-- Navbar Placeholder -->
+   <div id="navbar-placeholder"></div>
+   
+   <div id="smooth-wrapper">
+      <div id="smooth-content">
+         <main>
+            <div class="contact-container">
+               <div class="contact-card">
+                  <!-- Logo -->
+                  <div class="contact-logo">
+                     <img src="assets/img/logo/logo-white.png" alt="Helal Logo">
+                  </div>
+
+                  <!-- Title -->
+                  <h1 class="contact-title">Join Our Team</h1>
+                  <p class="contact-subtitle">Choose your path (Job or Internship), pick an open position, and submit your application.</p>
+
+                  <!-- Hiring Form -->
+                  <form id="hiring-form" class="contact-form">
+                     <div class="form-group">
+                        <label for="employment-type">Employment Type</label>
+                        <div class="select-wrap">
+                           <select id="employment-type" name="employmentType" class="form-control nice-select-init" required>
+                              <option value="" disabled selected>Select employment type</option>
+                              <option value="Job">Job</option>
+                              <option value="Internship">Internship</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="position">Position</label>
+                        <div class="select-wrap">
+                           <select id="position" name="position" class="form-control nice-select-init" required>
+                              <option value="" disabled selected>Select a position</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="applicant-name">Full Name</label>
+                        <input type="text" id="applicant-name" name="name" class="form-control" placeholder="Enter your full name" required>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="applicant-email">Email Address</label>
+                        <input type="email" id="applicant-email" name="email" class="form-control" placeholder="Enter your email address" required>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="applicant-phone">Phone Number</label>
+                        <input type="tel" id="applicant-phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="linkedin-url">LinkedIn Profile URL</label>
+                        <input type="url" id="linkedin-url" name="linkedinUrl" class="form-control" placeholder="https://www.linkedin.com/in/your-profile" required>
+                     </div>
+
+                     <!-- CV Upload Mode Selection -->
+                     <div class="form-group">
+                        <label>CV Upload Method</label>
+                        <div class="upload-mode-selector">
+                           <label class="radio-option">
+                              <input type="radio" name="cv-upload-mode" value="file" checked>
+                              <span>Upload File</span>
+                           </label>
+                           <label class="radio-option">
+                              <input type="radio" name="cv-upload-mode" value="url">
+                              <span>External Link</span>
+                           </label>
+                        </div>
+                     </div>
+
+                     <!-- CV File Upload -->
+                     <div class="form-group" id="cv-file-group">
+                        <label for="cv-file">CV / Resume File (PDF, DOC, DOCX - Max 10MB)</label>
+                        <input type="file" id="cv-file" name="cvFile" class="form-control" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                        <div id="cv-file-info" class="file-info" style="display: none;">
+                           <p class="file-name"></p>
+                           <p class="file-size"></p>
+                        </div>
+                     </div>
+
+                     <!-- CV URL Input -->
+                     <div class="form-group" id="cv-url-group" style="display: none;">
+                        <label for="cv-url">CV / Resume URL</label>
+                        <input type="url" id="cv-url" name="cvUrl" class="form-control" placeholder="Link to your CV (Drive/Dropbox/etc.)">
+                     </div>
+
+                     <div class="form-group">
+                        <label for="portfolio-url">Portfolio / Behance URL</label>
+                        <input type="url" id="portfolio-url" name="portfolioUrl" class="form-control" placeholder="Link to your Portfolio or Behance profile" required>
+                     </div>
+
+                     <div class="form-group">
+                        <label for="notes">Notes (optional)</label>
+                        <textarea id="notes" name="notes" class="form-control" placeholder="Anything else we should know?"></textarea>
+                     </div>
+
+                     <button type="submit" id="submit-btn" class="contact-btn">
+                        <span id="btn-text">Submit Application</span>
+                     </button>
+
+                     <div id="form-message" class="message-display"></div>
+                  </form>
+
+                  <!-- Contact Info -->
+                  <div class="contact-info">
+                     <a href="tel:+201220117832" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+201288640058</span>
+                     </a>
+                     <a href="mailto:business@helal-marketing.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>business@helal-marketing.com</span>
+                     </a>
+                    
+                  </div>
+               </div>
+            </div>
+         </main>
+
+         <!-- Footer Placeholder -->
+         <div id="footer-placeholder"></div>
+      </div>
+   </div>
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+   <script src="assets/js/gsap.js"></script>
+   <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+   <script src="assets/js/gsap-scroll-smoother.js"></script>
+   <script src="assets/js/gsap-scroll-trigger.js"></script>
+   <script src="assets/js/gsap-split-text.js"></script>
+   <script src="assets/js/chroma.min.js"></script>
+   <script src='assets/js/three.js'></script>
+   <script src='assets/js/tween-max.js'></script>
+   <script src='assets/js/scroll-magic.js'></script>
+   <script src="assets/js/range-slider.js"></script>
+   <script src="assets/js/swiper-bundle.js"></script>
+   <script src="assets/js/slick.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/beforeafter.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/webgl.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/tp-cursor.js"></script>
+   <script src="assets/js/component-loader.js"></script>
+
+   <script>
+      // Fade out and hide the loader on window load (match homepage behavior)
+      window.addEventListener('load', function() {
+         var preloader = document.getElementById('loading');
+         if (preloader) {
+            preloader.classList.add('fade-out');
+            setTimeout(function(){ preloader.style.display = 'none'; }, 600);
+         }
+      });
+   </script>
+
+   <script>
+      // Hiring Form Handler
+      $(document).ready(function() {
+         // initialize nice-select on the dropdowns
+         if ($.fn.niceSelect) {
+            $('#employment-type').niceSelect();
+            $('#position').niceSelect();
+         }
+         console.log('Hiring form jQuery handler registered');
+
+         const positionsByType = {
+            Job: [
+              'Video editor (Senior)',
+               'Social media specialist (Entry level)',
+               'Graphic designer (Entry level)',
+               'Videographer (Mid-level)',
+              'Content creator (Entry level)',
+              'Media buyer'
+            ],
+            Internship: [
+               'Script writer',
+               'Videographer',
+               'Social media marketing',
+               'Business development',
+               'Media buyer'
+            ]
+         };
+
+         function refreshPositions(type) {
+            const $select = $('#position');
+            const selected = type && positionsByType[type] ? positionsByType[type] : [];
+            $select.empty();
+            $select.append('<option value="" disabled selected>Select a position</option>');
+            selected.forEach(function(role) {
+               $select.append('<option value="' + role + '">' + role + '</option>');
+            });
+            if ($.fn.niceSelect) {
+               $select.niceSelect('update');
+            }
+         }
+
+         $('#employment-type').on('change', function() {
+            const type = $(this).val();
+            refreshPositions(type);
+         });
+
+         // Populate positions on initial load if an employment type is already selected
+         const initialType = $('#employment-type').val();
+         if (initialType) {
+            refreshPositions(initialType);
+         }
+
+         // CV Upload Mode Toggle
+         $('input[name="cv-upload-mode"]').on('change', function() {
+            const mode = $(this).val();
+            if (mode === 'file') {
+               $('#cv-file-group').show();
+               $('#cv-url-group').hide();
+               $('#cv-file').prop('required', true);
+               $('#cv-url').prop('required', false);
+            } else {
+               $('#cv-file-group').hide();
+               $('#cv-url-group').show();
+               $('#cv-file').prop('required', false);
+               $('#cv-url').prop('required', true);
+            }
+         });
+
+         // CV File Change Handler
+         $('#cv-file').on('change', function(e) {
+            const file = e.target.files?.[0];
+            const fileInfo = $('#cv-file-info');
+            
+            if (!file) {
+               fileInfo.hide();
+               return;
+            }
+
+            // Validate file type
+            const allowedTypes = ['application/pdf', 'application/msword', 
+               'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+            const allowedExtensions = ['.pdf', '.doc', '.docx'];
+            const fileExtension = '.' + file.name.split('.').pop()?.toLowerCase();
+            
+            const isValidType = allowedTypes.includes(file.type) || 
+               allowedExtensions.some(ext => file.name.toLowerCase().endsWith(ext));
+            
+            if (!isValidType) {
+               showMessage('File type not supported. Please upload a PDF, DOC, or DOCX file.', 'error');
+               $(this).val('');
+               fileInfo.hide();
+               return;
+            }
+
+            // Validate file size (10MB max)
+            const maxSize = 10 * 1024 * 1024; // 10MB
+            if (file.size > maxSize) {
+               showMessage('File size is too large. Maximum size is 10MB.', 'error');
+               $(this).val('');
+               fileInfo.hide();
+               return;
+            }
+
+            // Show file info
+            fileInfo.find('.file-name').text('Selected: ' + file.name);
+            fileInfo.find('.file-size').text('Size: ' + (file.size / 1024 / 1024).toFixed(2) + ' MB');
+            fileInfo.show();
+         });
+
+         $('#hiring-form').on('submit', async function(e) {
+            e.preventDefault();
+            console.log('Hiring form submission via AJAX');
+
+            const submitBtn = $('#submit-btn');
+            const btnText = $('#btn-text');
+            const uploadMode = $('input[name="cv-upload-mode"]:checked').val();
+
+            // Get form values
+            const formData = {
+               employmentType: $('#employment-type').val(),
+               position: $('#position').val(),
+               name: $('#applicant-name').val().trim(),
+               email: $('#applicant-email').val().trim(),
+               phone: $('#applicant-phone').val().trim(),
+               linkedinUrl: $('#linkedin-url').val().trim(),
+               portfolioUrl: $('#portfolio-url').val().trim(),
+               notes: $('#notes').val().trim()
+            };
+
+            // Validate required fields
+            if (!formData.employmentType || !formData.position || !formData.name || !formData.email || !formData.phone || !formData.linkedinUrl || !formData.portfolioUrl) {
+               showMessage('Please fill in all required fields.', 'error');
+               return;
+            }
+
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+               showMessage('Please enter a valid email address.', 'error');
+               return;
+            }
+
+            // Validate URL format (basic)
+            const urlRegex = /^(https?:\/\/)[\w.-]+(\.[\w\.-]+)+[\w\-\._~:\/?#\[\]@!$&'()*+,;=.]*$/i;
+            if (!urlRegex.test(formData.linkedinUrl)) {
+               showMessage('Please enter a valid LinkedIn URL (starts with https://).', 'error');
+               return;
+            }
+            if (!urlRegex.test(formData.portfolioUrl)) {
+               showMessage('Please enter a valid Portfolio/Behance URL (starts with https://).', 'error');
+               return;
+            }
+
+            // Validate CV (file or URL)
+            if (uploadMode === 'file') {
+               const cvFile = $('#cv-file')[0].files?.[0];
+               if (!cvFile) {
+                  showMessage('Please select a CV file to upload.', 'error');
+                  return;
+               }
+            } else {
+               const cvUrl = $('#cv-url').val().trim();
+               if (!cvUrl) {
+                  showMessage('Please enter a CV URL.', 'error');
+                  return;
+               }
+               if (!urlRegex.test(cvUrl)) {
+                  showMessage('Please enter a valid CV URL (starts with https://).', 'error');
+                  return;
+               }
+            }
+
+            // Disable button and show loading
+            submitBtn.prop('disabled', true);
+            btnText.html('<span class="spinner"></span>Submitting...');
+
+            try {
+               // Add timeout handling
+               const controller = new AbortController();
+               const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 second timeout
+               
+               let response;
+               
+               try {
+                  if (uploadMode === 'file') {
+                     // Upload file using FormData
+                     const formDataToSend = new FormData();
+                     formDataToSend.append('employmentType', formData.employmentType);
+                     formDataToSend.append('position', formData.position);
+                     formDataToSend.append('name', formData.name);
+                     formDataToSend.append('email', formData.email);
+                     formDataToSend.append('phone', formData.phone);
+                     formDataToSend.append('linkedinUrl', formData.linkedinUrl);
+                     formDataToSend.append('portfolioUrl', formData.portfolioUrl);
+                     
+                     if (formData.notes) {
+                        formDataToSend.append('notes', formData.notes);
+                     }
+                     
+                     const cvFile = $('#cv-file')[0].files[0];
+                     formDataToSend.append('cvFile', cvFile);
+
+                     response = await fetch('https://hapi.rmzdev.dpdns.org/api/hiring', {
+                        method: 'POST',
+                        body: formDataToSend,
+                        signal: controller.signal
+                        // Don't set Content-Type header - browser will set it with boundary
+                     });
+                  } else {
+                     // Send URL using JSON
+                     formData.cvUrl = $('#cv-url').val().trim();
+                     
+                     response = await fetch('https://hapi.rmzdev.dpdns.org/api/hiring', {
+                        method: 'POST',
+                        headers: {
+                           'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData),
+                        signal: controller.signal
+                     });
+                  }
+
+                  clearTimeout(timeoutId);
+
+                  if (!response.ok) {
+                     const errorData = await response.json().catch(() => ({}));
+                     const message = (errorData && (errorData.error || errorData.message)) || 'An error occurred. Please try again.';
+                     showMessage(message, 'error');
+                     return;
+                  }
+
+                  const result = await response.json().catch(() => ({}));
+
+                  if (result.ok) {
+                     showMessage('Application submitted successfully! We\'ll contact you if there\'s a match.', 'success');
+                     $('#hiring-form')[0].reset();
+                     $('#cv-file-info').hide();
+                     // Reset selects
+                     if ($.fn.niceSelect) {
+                        $('#employment-type').val('').niceSelect('update');
+                        refreshPositions(null);
+                     }
+                     // Reset upload mode to file
+                     $('input[name="cv-upload-mode"][value="file"]').prop('checked', true).trigger('change');
+                  } else {
+                     const message = (result && (result.error || result.message)) || 'An error occurred. Please try again.';
+                     showMessage(message, 'error');
+                  }
+               } catch (fetchError) {
+                  clearTimeout(timeoutId);
+                  
+                  if (fetchError instanceof Error) {
+                     if (fetchError.name === 'AbortError') {
+                        showMessage('Connection timeout. Please check your internet connection and try again.', 'error');
+                     } else if (fetchError.message.includes('Failed to fetch') || fetchError.message.includes('NetworkError')) {
+                        showMessage('Network error. Please check your connection and try again.', 'error');
+                     } else {
+                        throw fetchError;
+                     }
+                  } else {
+                     throw new Error('An unexpected error occurred');
+                  }
+               }
+            } catch (error) {
+               showMessage('Network error. Please check your connection and try again.', 'error');
+               console.error('Hiring form error:', error);
+            } finally {
+               submitBtn.prop('disabled', false);
+               btnText.text('Submit Application');
+            }
+         });
+
+         // Backup click -> submit
+         $('#submit-btn').on('click', function(e) {
+            e.preventDefault();
+            $('#hiring-form').trigger('submit');
+         });
+      });
+
+      function showMessage(message, type) {
+         const messageDiv = $('#form-message');
+         messageDiv.text(message);
+         messageDiv.attr('class', `message-display message-${type}`);
+         messageDiv.show();
+
+         // Clear message after 5 seconds
+         setTimeout(() => {
+            messageDiv.hide();
+         }, 5000);
+      }
+   </script>
+</body>
+
+</html>

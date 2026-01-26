@@ -1,0 +1,1155 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Meet Our Team | Helal Digital Marketing Agency Alexandria</title>
+   <meta name="description" content="Meet the talented team behind Helal Digital Marketing Agency. Our experts in media production, digital marketing, and branding are here to help your business shine in Alexandria, Egypt.">
+   <meta name="keywords" content="Helal team Alexandria, digital marketing team Egypt, branding experts Alexandria, media production team, marketing professionals Egypt">
+   <meta name="author" content="Helal Digital Marketing Agency">
+   <meta property="og:title" content="Our Team - Helal Digital Marketing Agency">
+   <meta property="og:description" content="Discover the creative minds driving success at Helal. Our diverse team brings expertise in marketing, branding, and media production.">
+   <meta property="og:type" content="website">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+   <!-- Preload critical resources -->
+   <link rel="preload" href="assets/css/main.css" as="style">
+   <link rel="preload" href="assets/js/vendor/jquery.js" as="script">
+   <link rel="preload" href="assets/v3.svg" as="image">
+   
+   <!-- DNS prefetch for external resources -->
+   <link rel="dns-prefetch" href="//res.cloudinary.com">
+   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+   <link rel="dns-prefetch" href="//www.linkedin.com">
+   
+   <!-- Preconnect to critical third-party domains -->
+   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+   <!-- CSS here - optimized loading -->
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.css" media="print" onload="this.media='all'">
+   <link rel="stylesheet" href="assets/css/spacing.css" media="print" onload="this.media='all'">
+   <!-- Font Awesome CDN for social icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+   
+   <!-- Deferred non-critical CSS -->
+   <noscript>
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   </noscript>
+
+   <!-- Custom Team Page Style -->
+   <style>
+      .team-container {
+         max-width: 1400px;
+         margin: 0 auto;
+         padding: 0 20px;
+      }
+
+      .page-bg {
+         background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+         min-height: 100vh;
+         position: relative;
+      }
+
+      .page-bg::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: url('assets/v3.svg') center/cover;
+         opacity: 0.1;
+         pointer-events: none;
+      }
+
+      .hero-section {
+         text-align: center;
+         padding: 150px 0 80px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .hero-subtitle {
+         font-size: 16px;
+         color: #FFD700;
+         font-weight: 500;
+         margin-bottom: 15px;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      .hero-title {
+         font-size: 48px;
+         font-weight: 700;
+         color: #fff;
+         margin-bottom: 25px;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      .hero-description {
+         font-size: 18px;
+         color: #ccc;
+         max-width: 600px;
+         margin: 0 auto;
+         line-height: 1.6;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      .team-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+         gap: 30px;
+         padding: 0 0 100px;
+      }
+
+      .team-card {
+         background: rgba(255, 255, 255, 0.05);
+         border: 2px solid rgba(255, 215, 0, 0.2);
+         border-radius: 25px;
+         padding: 0;
+         overflow: hidden;
+         transition: all 0.4s ease;
+         backdrop-filter: blur(15px);
+         position: relative;
+      }
+
+      .team-card:hover {
+         background: rgba(255, 255, 255, 0.1);
+         border-color: #FFD700;
+         transform: translateY(-10px);
+         box-shadow: 0 20px 50px rgba(255, 215, 0, 0.4);
+      }
+
+      .team-card::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+         transition: left 0.6s ease;
+      }
+
+      .team-card:hover::before {
+         left: 100%;
+      }
+
+      .team-image {
+         width: 100%;
+         height: 300px;
+         overflow: hidden;
+         position: relative;
+      }
+
+      .team-image img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         transition: transform 0.4s ease;
+      }
+
+      .team-card:hover .team-image img {
+         transform: scale(1.1);
+      }
+
+      .team-overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+         opacity: 0;
+         transition: opacity 0.4s ease;
+      }
+
+      .team-card:hover .team-overlay {
+         opacity: 1;
+      }
+
+      .team-info {
+         padding: 25px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .team-role {
+         font-size: 14px;
+         color: #FFD700;
+         font-weight: 500;
+         margin-bottom: 8px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      .team-name {
+         font-size: 20px;
+         font-weight: 600;
+         color: #fff;
+         margin-bottom: 15px;
+         font-family: 'Poppins', sans-serif;
+         line-height: 1.2;
+      }
+
+      .team-linkedin {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         padding: 10px 20px;
+         background: rgba(255, 215, 0, 0.1);
+         border: 2px solid rgba(255, 215, 0, 0.3);
+         border-radius: 25px;
+         color: #FFD700;
+         text-decoration: none;
+         font-family: 'Poppins', sans-serif;
+         font-weight: 500;
+         font-size: 14px;
+         transition: all 0.3s ease;
+      }
+
+      .team-linkedin:hover {
+         background: #FFD700;
+         color: #000;
+         border-color: #FFD700;
+         transform: translateY(-2px);
+         box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+      }
+
+      .team-linkedin i {
+         font-size: 16px;
+         transition: transform 0.3s ease;
+      }
+
+      .team-linkedin:hover i {
+         transform: scale(1.2);
+      }
+
+      .stats-section {
+         background: rgba(0, 0, 0, 0.8);
+         border-top: 2px solid rgba(255, 215, 0, 0.3);
+         padding: 80px 0;
+         margin: 60px 0 0;
+         backdrop-filter: blur(15px);
+      }
+
+      .stats-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: 40px;
+         text-align: center;
+      }
+
+      .stat-item {
+         position: relative;
+      }
+
+      .stat-number {
+         font-size: 48px;
+         font-weight: 700;
+         color: #FFD700;
+         margin-bottom: 10px;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      .stat-label {
+         font-size: 16px;
+         color: #ccc;
+         font-weight: 500;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      .section-title {
+         text-align: center;
+         font-size: 36px;
+         font-weight: 700;
+         color: #FFD700;
+         margin-bottom: 60px;
+         font-family: 'Poppins', sans-serif;
+         position: relative;
+      }
+
+      .section-title::after {
+         content: '';
+         position: absolute;
+         bottom: -15px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 80px;
+         height: 3px;
+         background: linear-gradient(90deg, #FFD700, #FFA500);
+         border-radius: 2px;
+      }
+
+      @media (max-width: 768px) {
+         .hero-title {
+            font-size: 36px;
+         }
+         
+         .team-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+         }
+         
+         .team-card {
+            margin: 0 10px;
+         }
+         
+         .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+         }
+         
+         .stat-number {
+            font-size: 36px;
+         }
+      }
+
+      /* Animation classes */
+      .fade-in-up {
+         opacity: 0;
+         transform: translateY(30px);
+         transition: all 0.6s ease;
+      }
+
+      .fade-in-up.animate {
+         opacity: 1;
+         transform: translateY(0);
+      }
+
+      .team-card {
+         opacity: 0;
+         transform: translateY(50px);
+         transition: all 0.6s ease;
+      }
+
+      .team-card.animate {
+         opacity: 1;
+         transform: translateY(0);
+      }
+
+      /* Lazy Loading Styles */
+      .lazy-image {
+         transition: opacity 0.3s ease;
+         background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+         background-size: 200% 100%;
+         animation: loading 1.5s infinite;
+      }
+
+      .lazy-image.loaded {
+         animation: none;
+         background: none;
+      }
+
+      @keyframes loading {
+         0% {
+            background-position: 200% 0;
+         }
+         100% {
+            background-position: -200% 0;
+         }
+      }
+
+      /* Performance optimizations */
+      .team-card {
+         contain: layout style paint;
+         will-change: transform, opacity;
+      }
+
+      .team-image {
+         contain: layout style paint;
+      }
+
+      .team-image img {
+         contain: layout style paint;
+      }
+
+      /* Reduce paint operations */
+      .team-card:hover {
+         contain: layout style paint;
+      }
+
+      /* Critical path optimization */
+      .hero-section {
+         contain: layout style paint;
+      }
+
+      /* GPU acceleration for smooth animations */
+      .team-card,
+      .team-image img,
+      .team-overlay {
+         transform: translateZ(0);
+         backface-visibility: hidden;
+         perspective: 1000px;
+      }
+
+      /* Modern Loader Styles */
+      .preloader-wrap {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         z-index: 9999;
+         overflow: hidden;
+      }
+
+      .modern-loader {
+         text-align: center;
+         position: relative;
+      }
+
+      .logo-container {
+         margin-bottom: 40px;
+         animation: logoFloat 3s ease-in-out infinite;
+      }
+
+      .loader-logo {
+         width: 80px;
+         height: auto;
+         filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
+         animation: logoGlow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes logoFloat {
+         0%, 100% { transform: translateY(0px); }
+         50% { transform: translateY(-10px); }
+      }
+
+      @keyframes logoGlow {
+         0% { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5)); }
+         100% { filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.8)); }
+      }
+
+      .rings-container {
+         position: relative;
+         width: 120px;
+         height: 120px;
+         margin: 0 auto 40px;
+      }
+
+      .ring {
+         position: absolute;
+         border: 3px solid transparent;
+         border-radius: 50%;
+         animation: ringRotate 2s linear infinite;
+      }
+
+      .ring-1 {
+         width: 120px;
+         height: 120px;
+         border-top: 3px solid #FFD700;
+         animation-duration: 1.5s;
+      }
+
+      .ring-2 {
+         width: 90px;
+         height: 90px;
+         top: 15px;
+         left: 15px;
+         border-right: 3px solid #FFA500;
+         animation-duration: 2s;
+         animation-direction: reverse;
+      }
+
+      .ring-3 {
+         width: 60px;
+         height: 60px;
+         top: 30px;
+         left: 30px;
+         border-bottom: 3px solid #FFD700;
+         animation-duration: 1s;
+      }
+
+      @keyframes ringRotate {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+      }
+
+      .loader-text {
+         font-family: 'Poppins', sans-serif;
+         font-size: 24px;
+         font-weight: 600;
+         color: #FFD700;
+         margin-bottom: 30px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 2px;
+      }
+
+      .text-char {
+         display: inline-block;
+         animation: textBounce 1.5s ease-in-out infinite;
+         animation-fill-mode: both;
+      }
+
+      .text-char:nth-child(1) { animation-delay: 0.1s; }
+      .text-char:nth-child(2) { animation-delay: 0.2s; }
+      .text-char:nth-child(3) { animation-delay: 0.3s; }
+      .text-char:nth-child(4) { animation-delay: 0.4s; }
+      .text-char:nth-child(5) { animation-delay: 0.5s; }
+      .text-char:nth-child(6) { animation-delay: 0.6s; }
+      .text-char:nth-child(7) { animation-delay: 0.7s; }
+
+      .dots {
+         animation: dotsBlink 1s ease-in-out infinite;
+      }
+
+      @keyframes textBounce {
+         0%, 80%, 100% { transform: translateY(0); }
+         40% { transform: translateY(-10px); }
+      }
+
+      @keyframes dotsBlink {
+         0%, 50% { opacity: 1; }
+         51%, 100% { opacity: 0.3; }
+      }
+
+      .progress-container {
+         width: 200px;
+         height: 4px;
+         background: rgba(255, 255, 255, 0.1);
+         border-radius: 2px;
+         overflow: hidden;
+         margin: 0 auto;
+      }
+
+      .progress-bar {
+         width: 0%;
+         height: 100%;
+         background: linear-gradient(90deg, #FFD700, #FFA500);
+         border-radius: 2px;
+         animation: progressFill 3s ease-in-out forwards;
+         box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+      }
+
+      @keyframes progressFill {
+         0% { width: 0%; }
+         50% { width: 70%; }
+         100% { width: 100%; }
+      }
+
+      /* Fade out animation */
+      .preloader-wrap.fade-out {
+         animation: fadeOut 0.5s ease-out forwards;
+      }
+
+      @keyframes fadeOut {
+         0% { opacity: 1; }
+         100% { opacity: 0; visibility: hidden; }
+      }
+   </style>
+</head>
+
+<body>
+
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+   <!-- pre loader area start -->
+   <div id="loading" class="preloader-wrap">
+      <div class="modern-loader">
+         <!-- Logo Container -->
+         <div class="logo-container">
+            <img src="assets/img/home-03/about/ab-shape-img.png" alt="Helal Logo" class="loader-logo">
+         </div>
+         
+         <!-- Animated Rings -->
+         <div class="rings-container">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+         </div>
+         
+         <!-- Loading Text -->
+         <div class="loader-text">
+            <span class="text-char">L</span>
+            <span class="text-char">o</span>
+            <span class="text-char">a</span>
+            <span class="text-char">d</span>
+            <span class="text-char">i</span>
+            <span class="text-char">n</span>
+            <span class="text-char">g</span>
+            <span class="dots">...</span>
+         </div>
+         
+         <!-- Progress Bar -->
+         <div class="progress-container">
+            <div class="progress-bar"></div>
+         </div>
+      </div>
+    </div>
+   <!-- pre loader area end -->
+
+   <!-- back to top start -->
+   <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+               stroke-linejoin="round" />
+         </svg>
+      </button>
+   </div>
+   <!-- back to top end -->
+
+   <!-- tp-offcanvus-area-end -->
+   <div class="tp-offcanvas-area">
+      <div class="tp-offcanvas-wrapper">
+         <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+            <div class="tp-offcanvas-logo">
+               <a href="index.html">
+                  <img class="logo-1" src="assets/img/logo/logo.png" alt="">
+                  <img class="logo-2" src="assets/img/logo/logo-white.png" alt="">
+               </a>
+            </div>
+            <div class="tp-offcanvas-close">
+               <button class="tp-offcanvas-close-btn">
+                  <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                     <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+        
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- tp-offcanvus-area-end -->
+
+   <!-- cart mini area start -->
+  
+   <!-- cart mini area end -->
+
+ <!-- Navbar Placeholder -->
+<div id="navbar-placeholder"></div>
+ 
+   
+   <!-- Modal -->
+
+   <div id="smooth-wrapper">
+      <div id="smooth-content">
+
+         <div class="page-bg">
+         <main>
+
+            <!-- hero area start -->
+               <div class="hero-section">
+                  <div class="team-container">
+                     <div class="fade-in-up">
+                        <span class="hero-subtitle">Helal Content Marketing</span>
+                        <h1 class="hero-title">Our Talented Team</h1>
+                        <p class="hero-description">
+                              We are a diverse team that values attention to detail, gathers on Wednesdays for Fun Day, and strives to make a meaningful impact in the world.
+                           </p>
+                  </div>
+               </div>
+            </div>
+            <!-- hero area end -->
+
+            <!-- team area start -->
+            <div class="team-section">
+               <div class="team-container">
+                  <h2 class="section-title fade-in-up">Meet Our Team</h2>
+                  <div class="team-grid">
+                     <!-- 1. مؤمن - CEO -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752378/b8oxb6jykwu5t7gzv28p.jpg" 
+                                alt="Moamen Helal" class="lazy-image">
+                           <div class="team-overlay"></div>
+                           </div>
+                        <div class="team-info">
+                           <div class="team-role">CEO & Founder</div>
+                           <div class="team-name">Moamen Helal</div>
+                           <a href="https://www.linkedin.com/in/moamenhelal/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 2. عمرو - Social Media Lead -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1758439704/raww1sdchmryowyhchzp.jpg" 
+                                alt="Amr Ibrahem" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Social Media Lead</div>
+                           <div class="team-name">Amr Ibrahem</div>
+                           <a href="https://www.linkedin.com/in/amr-ibrahem-ahmed/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 3. هاجر - Operations Manager -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1758439574/dkerkkxmuk8iwwetxuat.jpg" 
+                                alt="Hagar Abd-Elsalam" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Operations Manager</div>
+                           <div class="team-name">Hagar Abd-Elsalam</div>
+                           <a href="https://www.linkedin.com/in/hagar-abdelsalam-4409b91b9/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 4. مصطفى - Video Editor -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752379/sfppj2637abiwjofloge.jpg" 
+                                alt="Mostafa Magdy" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Video Editor</div>
+                           <div class="team-name">Mostafa Magdy</div>
+                           <a href="https://www.linkedin.com/in/mostafa-magdy-41a41632b/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 5. صلاح - Content Creator -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1758438544/u7of5rocb00xmxlhc5jf.jpg" 
+                                alt="Salha Elden" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Content Creator</div>
+                           <div class="team-name">salah Elden</div>
+                           <a href="https://www.linkedin.com/in/saladin-muhammad-47698a221/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 6. أنس - Photographer -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752387/foramfzg6dsajq8bzqls.jpg" 
+                                alt="Anas Radwan" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Photographer</div>
+                           <div class="team-name">Anas Radwan</div>
+                           <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 7. علاء - Graphic Designer -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752388/nrha6fxppvgur03vf2lm.jpg" 
+                                alt="Alaa Fawzy" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Graphic Designer</div>
+                           <div class="team-name">Alaa Fawzy</div>
+                           <a href="https://www.linkedin.com/in/alaa-fawzy-684aa2345/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 8. محمود العبد - Graphic Designer -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752380/lokfvxwq4aqpv2cti16p.jpg" 
+                                alt="Mahmoud Elabd" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Graphic Designer</div>
+                           <div class="team-name">Mahmoud Elabd</div>
+                           <a href="https://www.linkedin.com/in/xl3bdx/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 9. رامز - Full Stack Developer -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752385/gkraqbbaobzup2nqphu6.jpg" 
+                                alt="Ramez Hany" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Full Stack Developer</div>
+                           <div class="team-name">Ramez Hany</div>
+                           <a href="https://www.linkedin.com/in/rramez-hany/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 10. فرح - Script Writer -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752387/dspr2vptm1gv3wiov43x.jpg" 
+                                alt="Farah Walid" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Script Writer</div>
+                           <div class="team-name">Farah Walid</div>
+                           <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 11. تسنيم - HR Manager -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752387/uscvzfwv9btart05afes.jpg" 
+                                alt="Tasnem Elmohamady" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">HR Manager</div>
+                           <div class="team-name">Tasnem Elmohamady</div>
+                           <a href="https://www.linkedin.com/in/tasneem-elmohamady" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 12. محمد حمدي - Photographer -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752381/sr9men6mhkiztc0iyhly.jpg" 
+                                alt="Mohamed Hamdy" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Photographer</div>
+                           <div class="team-name">Mohamed Hamdy</div>
+                           <a href="https://www.linkedin.com/in/mohamedhamdy53" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                           </div>
+                        </div>
+                     
+                     <!-- 13. مريم - Social Media Specialist -->
+                     <div class="team-card">
+                        <div class="team-image">
+                           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23999'%3ELoading...%3C/text%3E%3C/svg%3E" 
+                                data-src="https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752378/vljvux3wrd5szfukiacc.jpg" 
+                                alt="Mariam Hamdy" class="lazy-image">
+                           <div class="team-overlay"></div>
+                     </div>
+                        <div class="team-info">
+                           <div class="team-role">Social Media Specialist</div>
+                           <div class="team-name">Mariam Hamdy</div>
+                           <a href="https://www.linkedin.com/in/mariam-hamdy-21b713349/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+                              <span>Connect</span>
+                              <i class="fab fa-linkedin-in"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- team area end -->
+
+            <!-- stats section start -->
+            <div class="stats-section">
+               <div class="team-container">
+                  <div class="stats-grid fade-in-up">
+                     <div class="stat-item">
+                        <div class="stat-number"><span>+</span><i class="purecounter" data-purecounter-duration="1" data-purecounter-end="14">14</i></div>
+                        <div class="stat-label">Team Members</div>
+               </div>
+                     <div class="stat-item">
+                        <div class="stat-number"><span>+</span><i class="purecounter" data-purecounter-duration="1" data-purecounter-end="50">50</i></div>
+                        <div class="stat-label">Projects</div>
+                           </div>
+                     <div class="stat-item">
+                        <div class="stat-number"><span>+</span><i class="purecounter" data-purecounter-duration="1" data-purecounter-end="3">3</i></div>
+                        <div class="stat-label">Years Experience</div>
+                        </div>
+                     <div class="stat-item">
+                        <div class="stat-number"><span>+</span><i class="purecounter" data-purecounter-duration="1" data-purecounter-end="25">25</i></div>
+                        <div class="stat-label">Happy Clients</div>
+                           </div>
+                     <div class="stat-item">
+                        <div class="stat-number"><span>+</span><i class="purecounter" data-purecounter-duration="1" data-purecounter-end="2">2</i></div>
+                        <div class="stat-label">Offices</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+            <!-- stats section end -->
+
+
+         </main>
+         </div>
+
+        <!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
+         
+      </div>
+   </div>
+   
+
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+
+   <script src="assets/js/gsap.js"></script>
+   <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+   <script src="assets/js/gsap-scroll-smoother.js"></script>
+   <script src="assets/js/gsap-scroll-trigger.js"></script>
+   <script src="assets/js/gsap-split-text.js"></script>
+   <script src="assets/js/chroma.min.js"></script>
+
+   <script src='assets/js/three.js'></script>
+   <script src='assets/js/tween-max.js'></script>
+   <script src='assets/js/scroll-magic.js'></script>
+
+   <script src="assets/js/range-slider.js"></script>
+   <script src="assets/js/swiper-bundle.js"></script>
+   <script src="assets/js/slick.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/beforeafter.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/webgl.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/tp-cursor.js"></script>
+
+   <script src="assets/js/component-loader.js"></script>
+
+   <!-- Optimized Performance Script -->
+   <script>
+      // Use passive listeners for better performance
+      const passiveOptions = { passive: true };
+      
+      // Debounce function for scroll events
+      function debounce(func, wait) {
+         let timeout;
+         return function executedFunction(...args) {
+            const later = () => {
+               clearTimeout(timeout);
+               func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+         };
+      }
+
+      // Lazy loading implementation
+      function lazyLoadImages() {
+         const lazyImages = document.querySelectorAll('.lazy-image:not(.loaded)');
+         
+         if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+               entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                     const img = entry.target;
+                     img.src = img.dataset.src;
+                     img.classList.add('loaded');
+                     observer.unobserve(img);
+                  }
+               });
+            }, {
+               rootMargin: '100px 0px',
+               threshold: 0.01
+            });
+
+            lazyImages.forEach(img => {
+               imageObserver.observe(img);
+            });
+         } else {
+            // Fallback for older browsers
+            lazyImages.forEach(img => {
+               img.src = img.dataset.src;
+               img.classList.add('loaded');
+            });
+         }
+      }
+
+      // Optimized animations with requestAnimationFrame
+      function animateOnScroll() {
+         requestAnimationFrame(() => {
+            // Animate hero section
+            const heroElements = document.querySelectorAll('.fade-in-up:not(.animate)');
+            heroElements.forEach((element, index) => {
+               setTimeout(() => {
+                  element.classList.add('animate');
+               }, index * 100); // Reduced delay for faster animation
+            });
+
+            // Animate team cards on scroll
+            const teamCards = document.querySelectorAll('.team-card:not(.animate)');
+            
+            const observer = new IntersectionObserver((entries) => {
+               entries.forEach((entry, index) => {
+                  if (entry.isIntersecting) {
+                     requestAnimationFrame(() => {
+                        setTimeout(() => {
+                           entry.target.classList.add('animate');
+                        }, index * 50); // Reduced delay
+                     });
+                  }
+               });
+            }, {
+               threshold: 0.1,
+               rootMargin: '20px'
+            });
+
+            teamCards.forEach(card => {
+               observer.observe(card);
+            });
+
+            // Optimized stats animation
+            const statItems = document.querySelectorAll('.stat-item');
+            if (statItems.length > 0) {
+               const statsObserver = new IntersectionObserver((entries) => {
+                  entries.forEach(entry => {
+                     if (entry.isIntersecting) {
+                        statItems.forEach((stat, index) => {
+                           requestAnimationFrame(() => {
+                              setTimeout(() => {
+                                 stat.style.opacity = '1';
+                                 stat.style.transform = 'translateY(0)';
+                              }, index * 100); // Reduced delay
+                           });
+                        });
+                     }
+                  });
+               });
+
+               statItems.forEach(stat => {
+                  stat.style.opacity = '0';
+                  stat.style.transform = 'translateY(30px)';
+                  stat.style.transition = 'all 0.4s ease'; // Faster transition
+               });
+               statsObserver.observe(statItems[0]);
+            }
+         });
+      }
+
+      // Optimized scroll handler with throttling
+      let ticking = false;
+      const handleScroll = () => {
+         if (!ticking) {
+            requestAnimationFrame(() => {
+               // Reduced scroll effects for better performance
+               ticking = false;
+            });
+            ticking = true;
+         }
+      };
+
+      // DOM ready optimization
+      if (document.readyState === 'loading') {
+         document.addEventListener('DOMContentLoaded', initPage);
+      } else {
+         initPage();
+      }
+
+      function initPage() {
+         // Initialize lazy loading first
+         lazyLoadImages();
+         
+         // Then animations
+         setTimeout(animateOnScroll, 100);
+         
+         // Add optimized scroll listener
+         window.addEventListener('scroll', debounce(handleScroll, 16), passiveOptions);
+         
+         // Preload critical images for faster subsequent loads
+         setTimeout(() => {
+            const criticalImages = [
+               'https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1757752378/b8oxb6jykwu5t7gzv28p.jpg',
+               'https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1758439704/raww1sdchmryowyhchzp.jpg',
+               'https://res.cloudinary.com/dtd8dx59o/image/upload/c_fill,w_300,h_300,q_auto,f_auto/v1758439574/dkerkkxmuk8iwwetxuat.jpg'
+            ];
+            
+            criticalImages.forEach(src => {
+               const img = new Image();
+               img.src = src;
+            });
+         }, 2000);
+      }
+
+      // إخفاء الـ loader بعد التحميل
+      window.addEventListener('load', function() {
+         setTimeout(function() {
+            const loader = document.getElementById('loading');
+            if (loader) {
+               loader.classList.add('fade-out');
+               setTimeout(function() {
+                  loader.style.display = 'none';
+               }, 500);
+            }
+         }, 2000); // 2 ثانية للعرض
+      });
+   </script>
+
+</body>
+
+</html>
