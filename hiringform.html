@@ -255,34 +255,104 @@
          box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
       }
 
-      /* File Input Styling */
-      input[type="file"].form-control {
-         padding: 10px;
-         cursor: pointer;
+      /* Modern File Upload Styling */
+      .file-upload-wrapper {
+         position: relative;
+         margin-top: 8px;
       }
 
-      input[type="file"].form-control::-webkit-file-upload-button {
-         background: linear-gradient(135deg, #FFD700, #FFA500);
-         color: #000;
-         border: none;
-         padding: 8px 16px;
-         border-radius: 8px;
+      .file-upload-area {
+         position: relative;
+         border: 2px dashed rgba(255, 215, 0, 0.4);
+         border-radius: 12px;
+         padding: 30px 20px;
+         text-align: center;
+         background: rgba(255, 255, 255, 0.03);
+         transition: all 0.3s ease;
+         cursor: pointer;
+         overflow: hidden;
+      }
+
+      .file-upload-area:hover {
+         border-color: rgba(255, 215, 0, 0.7);
+         background: rgba(255, 255, 255, 0.05);
+         transform: translateY(-2px);
+      }
+
+      .file-upload-area.dragover {
+         border-color: #FFD700;
+         background: rgba(255, 215, 0, 0.1);
+         box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      }
+
+      .file-upload-icon {
+         font-size: 48px;
+         color: #FFD700;
+         margin-bottom: 15px;
+         display: block;
+         animation: iconFloat 2s ease-in-out infinite;
+      }
+
+      @keyframes iconFloat {
+         0%, 100% { transform: translateY(0px); }
+         50% { transform: translateY(-5px); }
+      }
+
+      .file-upload-text {
+         color: #fff;
+         font-size: 16px;
          font-weight: 600;
-         cursor: pointer;
-         margin-right: 10px;
+         margin-bottom: 8px;
       }
 
-      input[type="file"].form-control::-webkit-file-upload-button:hover {
-         opacity: 0.9;
+      .file-upload-hint {
+         color: #999;
+         font-size: 13px;
+         margin: 0;
+      }
+
+      input[type="file"].file-input {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         opacity: 0;
+         cursor: pointer;
+         z-index: 10;
       }
 
       /* File Info Display */
       .file-info {
-         margin-top: 10px;
-         padding: 12px;
+         margin-top: 15px;
+         padding: 15px;
          background: rgba(255, 215, 0, 0.1);
          border: 1px solid rgba(255, 215, 0, 0.3);
-         border-radius: 8px;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         gap: 15px;
+         animation: slideIn 0.3s ease;
+      }
+
+      @keyframes slideIn {
+         from {
+            opacity: 0;
+            transform: translateY(-10px);
+         }
+         to {
+            opacity: 1;
+            transform: translateY(0);
+         }
+      }
+
+      .file-info-icon {
+         font-size: 24px;
+         color: #FFD700;
+      }
+
+      .file-info-content {
+         flex: 1;
       }
 
       .file-info .file-name {
@@ -290,12 +360,94 @@
          font-weight: 600;
          margin: 0 0 5px 0;
          font-size: 14px;
+         display: flex;
+         align-items: center;
+         gap: 8px;
       }
 
       .file-info .file-size {
          color: #ccc;
          margin: 0;
          font-size: 13px;
+      }
+
+      .file-remove-btn {
+         background: rgba(255, 107, 107, 0.2);
+         border: 1px solid rgba(255, 107, 107, 0.4);
+         color: #ff6b6b;
+         padding: 6px 12px;
+         border-radius: 6px;
+         cursor: pointer;
+         font-size: 12px;
+         transition: all 0.3s ease;
+      }
+
+      .file-remove-btn:hover {
+         background: rgba(255, 107, 107, 0.3);
+         border-color: #ff6b6b;
+      }
+
+      /* Upload Loader */
+      .upload-loader {
+         display: none;
+         margin-top: 15px;
+         padding: 20px;
+         background: rgba(255, 215, 0, 0.1);
+         border: 1px solid rgba(255, 215, 0, 0.3);
+         border-radius: 10px;
+         text-align: center;
+      }
+
+      .upload-loader.active {
+         display: block;
+         animation: slideIn 0.3s ease;
+      }
+
+      .upload-loader-spinner {
+         width: 50px;
+         height: 50px;
+         margin: 0 auto 15px;
+         position: relative;
+      }
+
+      .upload-loader-spinner::before {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         border: 4px solid rgba(255, 215, 0, 0.2);
+         border-top-color: #FFD700;
+         border-radius: 50%;
+         animation: spinLoader 1s linear infinite;
+      }
+
+      @keyframes spinLoader {
+         to { transform: rotate(360deg); }
+      }
+
+      .upload-loader-text {
+         color: #FFD700;
+         font-weight: 600;
+         font-size: 14px;
+         margin-bottom: 10px;
+      }
+
+      .upload-progress-bar {
+         width: 100%;
+         height: 6px;
+         background: rgba(255, 255, 255, 0.1);
+         border-radius: 3px;
+         overflow: hidden;
+         margin-top: 10px;
+      }
+
+      .upload-progress-fill {
+         height: 100%;
+         background: linear-gradient(90deg, #FFD700, #FFA500);
+         border-radius: 3px;
+         width: 0%;
+         transition: width 0.3s ease;
+         box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
       }
 
       .contact-btn {
@@ -642,35 +794,35 @@
                         <input type="url" id="linkedin-url" name="linkedinUrl" class="form-control" placeholder="https://www.linkedin.com/in/your-profile" required>
                      </div>
 
-                     <!-- CV Upload Mode Selection -->
-                     <div class="form-group">
-                        <label>CV Upload Method</label>
-                        <div class="upload-mode-selector">
-                           <label class="radio-option">
-                              <input type="radio" name="cv-upload-mode" value="file" checked>
-                              <span>Upload File</span>
-                           </label>
-                           <label class="radio-option">
-                              <input type="radio" name="cv-upload-mode" value="url">
-                              <span>External Link</span>
-                           </label>
-                        </div>
-                     </div>
 
                      <!-- CV File Upload -->
                      <div class="form-group" id="cv-file-group">
                         <label for="cv-file">CV / Resume File (PDF, DOC, DOCX - Max 10MB)</label>
-                        <input type="file" id="cv-file" name="cvFile" class="form-control" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-                        <div id="cv-file-info" class="file-info" style="display: none;">
-                           <p class="file-name"></p>
-                           <p class="file-size"></p>
+                        <div class="file-upload-wrapper">
+                           <div class="file-upload-area" id="file-upload-area">
+                              <i class="fas fa-cloud-upload-alt file-upload-icon"></i>
+                              <div class="file-upload-text">Click to upload or drag and drop</div>
+                              <p class="file-upload-hint">PDF, DOC, DOCX (Max 10MB)</p>
+                              <input type="file" id="cv-file" name="cvFile" class="file-input" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                           </div>
+                           <div id="cv-file-info" class="file-info" style="display: none;">
+                              <i class="fas fa-file-pdf file-info-icon"></i>
+                              <div class="file-info-content">
+                                 <p class="file-name"></p>
+                                 <p class="file-size"></p>
+                              </div>
+                              <button type="button" class="file-remove-btn" id="remove-file-btn">
+                                 <i class="fas fa-times"></i> Remove
+                              </button>
+                           </div>
+                           <div id="upload-loader" class="upload-loader">
+                              <div class="upload-loader-spinner"></div>
+                              <div class="upload-loader-text">Uploading your CV...</div>
+                              <div class="upload-progress-bar">
+                                 <div class="upload-progress-fill" id="upload-progress-fill"></div>
+                              </div>
+                           </div>
                         </div>
-                     </div>
-
-                     <!-- CV URL Input -->
-                     <div class="form-group" id="cv-url-group" style="display: none;">
-                        <label for="cv-url">CV / Resume URL</label>
-                        <input type="url" id="cv-url" name="cvUrl" class="form-control" placeholder="Link to your CV (Drive/Dropbox/etc.)">
                      </div>
 
                      <div class="form-group">
@@ -800,26 +952,48 @@
             refreshPositions(initialType);
          }
 
-         // CV Upload Mode Toggle
-         $('input[name="cv-upload-mode"]').on('change', function() {
-            const mode = $(this).val();
-            if (mode === 'file') {
-               $('#cv-file-group').show();
-               $('#cv-url-group').hide();
-               $('#cv-file').prop('required', true);
-               $('#cv-url').prop('required', false);
-            } else {
-               $('#cv-file-group').hide();
-               $('#cv-url-group').show();
-               $('#cv-file').prop('required', false);
-               $('#cv-url').prop('required', true);
+         // Drag and Drop functionality
+         const fileUploadArea = $('#file-upload-area');
+         const fileInput = $('#cv-file');
+
+         fileUploadArea.on('dragover', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).addClass('dragover');
+         });
+
+         fileUploadArea.on('dragleave', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).removeClass('dragover');
+         });
+
+         fileUploadArea.on('drop', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).removeClass('dragover');
+            
+            const files = e.originalEvent.dataTransfer.files;
+            if (files.length > 0) {
+               fileInput[0].files = files;
+               fileInput.trigger('change');
             }
+         });
+
+         // Remove file button
+         $('#remove-file-btn').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            fileInput.val('');
+            $('#cv-file-info').hide();
+            $('#file-upload-area').removeClass('dragover');
          });
 
          // CV File Change Handler
          $('#cv-file').on('change', function(e) {
             const file = e.target.files?.[0];
             const fileInfo = $('#cv-file-info');
+            const uploadArea = $('#file-upload-area');
             
             if (!file) {
                fileInfo.hide();
@@ -839,6 +1013,7 @@
                showMessage('File type not supported. Please upload a PDF, DOC, or DOCX file.', 'error');
                $(this).val('');
                fileInfo.hide();
+               uploadArea.removeClass('dragover');
                return;
             }
 
@@ -848,13 +1023,22 @@
                showMessage('File size is too large. Maximum size is 10MB.', 'error');
                $(this).val('');
                fileInfo.hide();
+               uploadArea.removeClass('dragover');
                return;
             }
 
+            // Update file icon based on type
+            let fileIcon = 'fa-file-pdf';
+            if (fileExtension === '.doc' || fileExtension === '.docx') {
+               fileIcon = 'fa-file-word';
+            }
+            fileInfo.find('.file-info-icon').removeClass('fa-file-pdf fa-file-word').addClass(fileIcon);
+
             // Show file info
-            fileInfo.find('.file-name').text('Selected: ' + file.name);
+            fileInfo.find('.file-name').html('<i class="fas ' + fileIcon + '"></i> ' + file.name);
             fileInfo.find('.file-size').text('Size: ' + (file.size / 1024 / 1024).toFixed(2) + ' MB');
             fileInfo.show();
+            uploadArea.removeClass('dragover');
          });
 
          $('#hiring-form').on('submit', async function(e) {
@@ -863,7 +1047,6 @@
 
             const submitBtn = $('#submit-btn');
             const btnText = $('#btn-text');
-            const uploadMode = $('input[name="cv-upload-mode"]:checked').val();
 
             // Get form values
             const formData = {
@@ -901,78 +1084,71 @@
                return;
             }
 
-            // Validate CV (file or URL)
-            if (uploadMode === 'file') {
-               const cvFile = $('#cv-file')[0].files?.[0];
-               if (!cvFile) {
-                  showMessage('Please select a CV file to upload.', 'error');
-                  return;
-               }
-            } else {
-               const cvUrl = $('#cv-url').val().trim();
-               if (!cvUrl) {
-                  showMessage('Please enter a CV URL.', 'error');
-                  return;
-               }
-               if (!urlRegex.test(cvUrl)) {
-                  showMessage('Please enter a valid CV URL (starts with https://).', 'error');
-                  return;
-               }
+            // Validate CV file
+            const cvFile = $('#cv-file')[0].files?.[0];
+            if (!cvFile) {
+               showMessage('Please select a CV file to upload.', 'error');
+               return;
             }
 
             // Disable button and show loading
             submitBtn.prop('disabled', true);
             btnText.html('<span class="spinner"></span>Submitting...');
 
+            // Show upload loader
+            const uploadLoader = $('#upload-loader');
+            const progressFill = $('#upload-progress-fill');
+            uploadLoader.addClass('active');
+            progressFill.css('width', '0%');
+
             try {
                // Add timeout handling
                const controller = new AbortController();
                const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 second timeout
                
-               let response;
+               // Simulate progress for file upload
+               let progress = 0;
+               const progressInterval = setInterval(() => {
+                  progress += Math.random() * 15;
+                  if (progress > 90) progress = 90;
+                  progressFill.css('width', progress + '%');
+               }, 200);
                
-               try {
-                  if (uploadMode === 'file') {
-                     // Upload file using FormData
-                     const formDataToSend = new FormData();
-                     formDataToSend.append('employmentType', formData.employmentType);
-                     formDataToSend.append('position', formData.position);
-                     formDataToSend.append('name', formData.name);
-                     formDataToSend.append('email', formData.email);
-                     formDataToSend.append('phone', formData.phone);
-                     formDataToSend.append('linkedinUrl', formData.linkedinUrl);
-                     formDataToSend.append('portfolioUrl', formData.portfolioUrl);
-                     
-                     if (formData.notes) {
-                        formDataToSend.append('notes', formData.notes);
-                     }
-                     
-                     const cvFile = $('#cv-file')[0].files[0];
-                     formDataToSend.append('cvFile', cvFile);
+               // Upload file using FormData
+               const formDataToSend = new FormData();
+               formDataToSend.append('employmentType', formData.employmentType);
+               formDataToSend.append('position', formData.position);
+               formDataToSend.append('name', formData.name);
+               formDataToSend.append('email', formData.email);
+               formDataToSend.append('phone', formData.phone);
+               formDataToSend.append('linkedinUrl', formData.linkedinUrl);
+               formDataToSend.append('portfolioUrl', formData.portfolioUrl);
+               
+               if (formData.notes) {
+                  formDataToSend.append('notes', formData.notes);
+               }
+               
+               const cvFile = $('#cv-file')[0].files[0];
+               formDataToSend.append('cvFile', cvFile);
 
-                     response = await fetch('https://hapi.rmzdev.dpdns.org/api/hiring', {
-                        method: 'POST',
-                        body: formDataToSend,
-                        signal: controller.signal
-                        // Don't set Content-Type header - browser will set it with boundary
-                     });
-                  } else {
-                     // Send URL using JSON
-                     formData.cvUrl = $('#cv-url').val().trim();
-                     
-                     response = await fetch('https://hapi.rmzdev.dpdns.org/api/hiring', {
-                        method: 'POST',
-                        headers: {
-                           'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(formData),
-                        signal: controller.signal
-                     });
-                  }
+               const response = await fetch('https://hapi.rmzdev.dpdns.org/api/hiring', {
+                  method: 'POST',
+                  body: formDataToSend,
+                  signal: controller.signal
+                  // Don't set Content-Type header - browser will set it with boundary
+               });
 
                   clearTimeout(timeoutId);
 
+                  // Complete progress bar
+                  if (progressInterval) {
+                     clearInterval(progressInterval);
+                     progressFill.css('width', '100%');
+                  }
+
                   if (!response.ok) {
+                     uploadLoader.removeClass('active');
+                     progressFill.css('width', '0%');
                      const errorData = await response.json().catch(() => ({}));
                      const message = (errorData && (errorData.error || errorData.message)) || 'An error occurred. Please try again.';
                      showMessage(message, 'error');
@@ -985,19 +1161,26 @@
                      showMessage('Application submitted successfully! We\'ll contact you if there\'s a match.', 'success');
                      $('#hiring-form')[0].reset();
                      $('#cv-file-info').hide();
+                     setTimeout(() => {
+                        uploadLoader.removeClass('active');
+                        progressFill.css('width', '0%');
+                     }, 1000);
                      // Reset selects
                      if ($.fn.niceSelect) {
                         $('#employment-type').val('').niceSelect('update');
                         refreshPositions(null);
                      }
-                     // Reset upload mode to file
-                     $('input[name="cv-upload-mode"][value="file"]').prop('checked', true).trigger('change');
                   } else {
                      const message = (result && (result.error || result.message)) || 'An error occurred. Please try again.';
                      showMessage(message, 'error');
+                     uploadLoader.removeClass('active');
+                     progressFill.css('width', '0%');
                   }
                } catch (fetchError) {
                   clearTimeout(timeoutId);
+                  if (progressInterval) clearInterval(progressInterval);
+                  uploadLoader.removeClass('active');
+                  progressFill.css('width', '0%');
                   
                   if (fetchError instanceof Error) {
                      if (fetchError.name === 'AbortError') {
@@ -1012,6 +1195,8 @@
                   }
                }
             } catch (error) {
+               uploadLoader.removeClass('active');
+               progressFill.css('width', '0%');
                showMessage('Network error. Please check your connection and try again.', 'error');
                console.error('Hiring form error:', error);
             } finally {
