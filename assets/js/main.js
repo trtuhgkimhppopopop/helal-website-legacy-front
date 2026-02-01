@@ -30,8 +30,8 @@
 	var windowOn = $(window);
 
 
-	// 08. Nice Select Js
-	$('select').niceSelect();
+	// 08. Nice Select Js (exclude hiring form selects - they need native change events)
+	$('select').not('.no-nice-select').niceSelect();
 
 
 	function back_to_top() {
