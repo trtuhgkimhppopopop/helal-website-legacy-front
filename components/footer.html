@@ -27,6 +27,22 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
       margin-bottom: 40px;
       position: relative;
+      overflow-x: hidden;
+      max-width: 100%;
+   }
+
+   .modern-footer .container.container-1480 {
+      max-width: 100%;
+      overflow-x: hidden;
+   }
+
+   .footer-main-container .row > [class*="col-"] {
+      min-width: 0;
+   }
+
+   .footer-newsletter {
+      min-width: 0;
+      max-width: 100%;
    }
 
    .footer-widget-title {
@@ -199,6 +215,24 @@
       backdrop-filter: blur(10px);
       border-top: 1px solid rgba(255, 215, 0, 0.2);
       padding: 25px 0;
+      overflow-x: hidden;
+      max-width: 100%;
+   }
+
+   .footer-copyright .row > [class*="col-"] {
+      min-width: 0;
+   }
+
+   .footer-copyright .footer-social-links.text-lg-end,
+   .footer-copyright .footer-social-links--copyright {
+      justify-content: center;
+   }
+
+   @media (min-width: 992px) {
+      .footer-copyright .footer-social-links.text-lg-end,
+      .footer-copyright .footer-social-links--copyright {
+         justify-content: flex-end;
+      }
    }
 
    .copyright-text {
@@ -209,21 +243,38 @@
 
    .footer-social-links {
       display: flex;
-      gap: 20px;
+      flex-wrap: wrap;
+      gap: 10px 12px;
       justify-content: center;
       align-items: center;
+      max-width: 100%;
+      box-sizing: border-box;
+   }
+
+   .footer-newsletter .footer-social-links {
+      justify-content: flex-start;
    }
 
    .footer-social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
       color: #ccc;
       text-decoration: none;
-      font-size: 15px;
-      font-weight: 600;
-      padding: 8px 16px;
-      border-radius: 20px;
+      font-size: 18px;
+      border-radius: 50%;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 215, 0, 0.2);
-      transition: all 0.3s ease;
+      transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+      flex: 0 0 auto;
+      box-sizing: border-box;
+   }
+
+   .footer-social-links a i {
+      line-height: 1;
    }
 
    .footer-social-links a:hover {
@@ -353,7 +404,7 @@
                   </div>
                </div>
 
-               <!-- Newsletter -->
+               <!-- Newsletter + Social -->
                <div class="col-xl-3 col-lg-5 col-md-6 mb-40">
                   <div class="footer-newsletter">
                      <h4 class="footer-widget-title">Stay Updated</h4>
@@ -367,6 +418,12 @@
                            </svg>
                         </button>
                      </form>
+                     <div class="footer-social-links" style="margin-top: 25px;">
+                        <a href="https://linkedin.com/company/helal-marketing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/helal.marketing" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://facebook.com/helal.marketing" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://youtube.com/@helalmarketing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -383,12 +440,8 @@
                </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12">
-               <div class="footer-social-links text-center text-lg-end">
-                  <a href="https://linkedin.com/company/helal-marketing" target="_blank">LinkedIn</a>
-                  <a href="https://instagram.com/helal.marketing" target="_blank">Instagram</a>
-                  <a href="https://facebook.com/helal.marketing" target="_blank">Facebook</a>
-                  <a href="https://youtube.com/@helalmarketing" target="_blank">YouTube</a>
-                  <a href="ai-bot/index.html">AI Assistant</a>
+               <div class="footer-social-links footer-social-links--copyright text-center text-lg-end">
+                  <a href="ai-bot/index.html" aria-label="AI Assistant"><i class="fas fa-robot" aria-hidden="true"></i></a>
                </div>
             </div>
          </div>
