@@ -1054,7 +1054,7 @@
                if (formData.notes) formDataToSend.append('notes', formData.notes);
                formDataToSend.append('cvFile', cvFile);
 
-               var response = await fetch('https://hapi.rmzdev.dpdns.org/api/hiring', {
+               var response = await fetch('https://hapi.rmzdevhelal.dpdns.org/api/hiring', {
                   method: 'POST',
                   body: formDataToSend,
                   signal: controller.signal
