@@ -355,6 +355,22 @@ const FALLBACK_FOOTER = `
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
       margin-bottom: 30px;
       position: relative;
+      overflow-x: hidden;
+      max-width: 100%;
+   }
+
+   .modern-footer .container.container-1480 {
+      max-width: 100%;
+      overflow-x: hidden;
+   }
+
+   .footer-main-container .row > [class*="col-"] {
+      min-width: 0;
+   }
+
+   .footer-newsletter {
+      min-width: 0;
+      max-width: 100%;
    }
 
    .footer-widget-title {
@@ -547,6 +563,8 @@ const FALLBACK_FOOTER = `
       backdrop-filter: blur(10px);
       border-top: 1px solid rgba(255, 215, 0, 0.2);
       padding: 20px 0;
+      overflow-x: hidden;
+      max-width: 100%;
    }
 
    .copyright-text {
@@ -557,21 +575,38 @@ const FALLBACK_FOOTER = `
 
    .footer-social-links {
       display: flex;
-      gap: 15px;
+      flex-wrap: wrap;
+      gap: 10px 12px;
       justify-content: center;
       align-items: center;
+      max-width: 100%;
+      box-sizing: border-box;
+   }
+
+   .footer-newsletter .footer-social-links {
+      justify-content: flex-start;
    }
 
    .footer-social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      padding: 0;
       color: #ccc;
       text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 6px 12px;
-      border-radius: 18px;
+      font-size: 18px;
+      border-radius: 50%;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 215, 0, 0.2);
-      transition: all 0.3s ease;
+      transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+      flex: 0 0 auto;
+      box-sizing: border-box;
+   }
+
+   .footer-social-links a i {
+      line-height: 1;
    }
 
    .footer-social-links a:hover {
@@ -787,10 +822,10 @@ const FALLBACK_FOOTER = `
                      </form>
                      <div id="newsletter-message" style="margin-top: 8px; color: #FFD700; font-size: 12px;"></div>
                      <div class="footer-social-links" style="margin-top: 25px;">
-                        <a href="https://linkedin.com/company/helal-marketing" target="_blank">LinkedIn</a>
-                        <a href="https://instagram.com/helal_marketing1" target="_blank">Instagram</a>
-                        <a href="https://www.facebook.com/people/Helal-content-marketing/61561659192957/?mibextid=wwXIfr&rdid=PiSSkbPrdBqpIBsR&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16ifRDRTyu%2F%3Fmibextid%3DwwXIfr" target="_blank">Facebook</a>
-                        <a href="https://youtube.com/@helal-marketing1" target="_blank">YouTube</a>
+                        <a href="https://linkedin.com/company/helal-marketing" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/helal_marketing1" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/people/Helal-content-marketing/61561659192957/?mibextid=wwXIfr&rdid=PiSSkbPrdBqpIBsR&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16ifRDRTyu%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://youtube.com/@helal-marketing1" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                      </div>
                   </div>
                </div>
