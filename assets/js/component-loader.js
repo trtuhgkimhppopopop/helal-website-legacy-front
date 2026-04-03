@@ -937,7 +937,7 @@ class ComponentLoader {
             messageDiv.text('Subscribing...').css('color', '#FFD700');
             
             try {
-               const response = await fetch('https://hapi.rmzdev.dpdns.org/api/newsletter', {
+               const response = await fetch('https://hapi.rmzdevhelal.dpdns.org/api/newsletter', {
                   method: 'POST',
                   headers: {
                      'Content-Type': 'application/json',
