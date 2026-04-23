@@ -5,6 +5,14 @@
 
 // إضافة ملف CSS الموحد إلى جميع الصفحات
 document.addEventListener('DOMContentLoaded', function() {
+  // Ensure social media brand icons are available on all pages
+  if (!document.querySelector('link[href*="cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"]')) {
+    const faLink = document.createElement('link');
+    faLink.rel = 'stylesheet';
+    faLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+    document.head.appendChild(faLink);
+  }
+
   // التحقق من وجود ملف CSS الموحد
   if (!document.querySelector('link[href*="unified-style.css"]')) {
     const cssLink = document.createElement('link');
